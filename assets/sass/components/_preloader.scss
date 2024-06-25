@@ -1,0 +1,8 @@
+.preloader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-color: $color__white;
+    @include flex-center;
+
+}

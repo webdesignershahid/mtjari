@@ -1,0 +1,42 @@
+.topbutton {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background-color: $color__white;
+    width: 5rem;
+    height: 5rem;
+    @include flex-center;
+    font-size: 2rem;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    transition: all 0.3s;
+    border-radius: .5rem;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+
+    [dir=rtl] & {
+        left: 3rem;
+        right: inherit;
+    }
+
+    &.btn-show {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+.btn__theme {
+    background-color: $color__theme;
+    color: $color__black;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    transition: all .15s ease;
+    @include inline-flex-center;
+    &:hover {
+        background-color: $color__secondary;
+        color: $color__white;
+    }
+}

@@ -1,0 +1,105 @@
+/*-------------------------------------------------
+    [ ## Fields ]
+---------------------------------------------------*/
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+input[type=time]::-webkit-inner-spin-button, 
+input[type=time]::-webkit-outer-spin-button,
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    box-shadow: 0 0 0rem 100rem rgba($color__black, 0) inset;
+    -webkit-box-shadow: 0 0 0rem 100rem rgba($color__black, 0) inset;
+    -webkit-text-fill-color: $color__black !important;
+}
+input:-webkit-autofill:focus {
+    box-shadow: 0 0 0rem 100rem rgba($color__black, 0) inset;
+    -webkit-box-shadow: 0 0 0rem 100rem rgba($color__black, 0) inset;
+    -webkit-text-fill-color: $color__body !important;
+}
+.form-control {
+    padding: 1rem 1.5rem;
+    font-size: 1.4rem;
+    @include xxxl-up {
+		font-size: 1.6rem;
+	}
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        border-color: $color__black;
+    }
+}
+textarea.form-control {
+    min-height: 15rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.4rem;
+    @include xxxl-up {
+		font-size: 1.6rem;
+	}
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.form-floating > .form-control {
+    border: none;
+    border-bottom: .1rem solid rgba(0,0,0,0.1);
+    border-radius: 0;
+}
+
+// Placeholder Color
+::-webkit-input-placeholder {
+    color: $color__black;
+}
+.widget_newsletter::-webkit-input-placeholder {
+    color: #808080;
+}
+
+:-moz-placeholder {
+    color: $color__black;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: $color__black;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color: $color__black;
+}
+
+
+/**
+ * Hide element while making it readable for screen readers
+ */
+.figure {
+	display: block;
+}

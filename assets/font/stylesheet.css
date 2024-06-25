@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'GE SS Text';
+    src: local('GE SS Text Light'), local('GESSTextLight-Light'),
+        url('GESSTextLight-Light.woff2') format('woff2'),
+        url('GESSTextLight-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE SS Text';
+    src: local('GE SS Text Medium'), local('GESSTextMedium-Medium'),
+        url('GESSTextMedium-Medium.woff2') format('woff2'),
+        url('GESSTextMedium-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE SS Text';
+    src: local('GE SS Text Light Italic'), local('GESSTextItalic-LightItalic'),
+        url('GESSTextItalic-LightItalic.woff2') format('woff2'),
+        url('GESSTextItalic-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE SS Text';
+    src: local('GE SS Text UltraLight'), local('GESSTextUltraLight-UltraLight'),
+        url('GESSTextUltraLight-UltraLight.woff2') format('woff2'),
+        url('GESSTextUltraLight-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE SS Text';
+    src: local('GE SS Text Bold'), local('GESSTextBold-Bold'),
+        url('GESSTextBold-Bold.woff2') format('woff2'),
+        url('GESSTextBold-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Md BT';
+    src: local('Futura Md BT Medium'), local('FuturaBT-Medium'),
+        url('FuturaBT-Medium.woff2') format('woff2'),
+        url('FuturaBT-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Md BT';
+    src: local('Futura Bold BT'), local('FuturaBT-Bold'),
+        url('FuturaBT-Bold.woff2') format('woff2'),
+        url('FuturaBT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

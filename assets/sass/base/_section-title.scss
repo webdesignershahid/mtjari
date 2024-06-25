@@ -1,0 +1,35 @@
+.section-title {
+    margin-bottom: 5rem;
+    .title {
+        position: relative;
+        font-size: 3.2rem;
+        font-weight: 500;
+        color: $color__secondary;
+        line-height: 2;
+        z-index: 1;
+        @include xl-down {
+            font-size: 2.6rem;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 3rem;
+            height: 3rem;
+            background-color: $color__theme;
+            z-index: -1;
+            transform: rotate(45deg);
+            opacity: .5;
+            top: 1.5rem;
+            left: -1.5rem;
+            [dir=rtl] & {
+                left: inherit;
+                right: -1.5rem;
+            }
+        }
+    }
+    .subtitle {
+        font-weight: 300;
+        font-size: 1.8rem;
+    }
+}

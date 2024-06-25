@@ -1,0 +1,86 @@
+.modal {
+    .btn-close {
+        width: 3rem;
+        height: 3rem;
+        color: $color__black;
+        border: .2rem solid $color__black;
+        box-shadow: none;
+        outline: 0;
+        border-radius: 50%;
+        @include flex-center;
+    }
+    .modal-header {
+        padding: 3rem 3rem;
+        border-bottom: 0;
+    }
+    .modal-body {
+        padding: 0 2rem 2rem;
+
+        @include lg-up {
+            padding: 0 5rem 3rem;
+        }
+    }
+    .modal-content {
+        background-size: cover;
+        background-position: center bottom;
+    }
+
+    &.searchModal {
+        .modal-body {
+            form {
+                max-width: 60rem;
+                margin: 8rem auto;
+                .form-control {
+                    padding: 1rem 1.5rem;
+                    font-size: 1.6rem;
+                }
+                button {
+                    padding: 0 3rem;
+                    border: 1px solid #ced4da;
+                    transition: all .25s ease;
+                    &:hover {
+                        background-color: $color__theme;
+                        color: $color__white;
+                    }
+                }
+            }
+        }
+    }
+    &.contact_modal {
+        --bs-modal-width: 700px;
+        --bs-modal-bg: #000;
+
+        .modal-header {
+            color: $color__white;
+            font-size: 2.4rem;
+            font-weight: 600;
+            justify-content: center;
+            padding: 2rem 2rem;
+            @include lg-up {
+                padding: 2rem 5rem;
+                font-size: 3.4rem;
+            }
+            .btn-close {
+                background: transparent;
+                color: $color__white;
+                border-color: $color__white;
+                font-size: 2rem;
+            }
+        }
+        fieldset {
+            & + fieldset {
+                margin-top: 2rem;
+            }
+            .form-control {
+                border-radius: 0;
+                font-size: 1.6rem;
+            }
+
+            button[type=submit] {
+                font-size: 1.8rem;
+                font-weight: 700;
+                padding: 1.2rem 4rem;
+            }
+        }
+    }
+}

@@ -18,6 +18,12 @@
     }
     .site-logo {
         max-width: 10rem;
+        @include xl-up {
+            max-width: 15rem;
+        }
+        @include xxl-up {
+            max-width: 18rem;
+        }
     }
     .menu-wrapper {
         @include lg-down {

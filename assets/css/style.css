@@ -539,6 +539,16 @@ textarea.form-control:focus {
 .header .site-logo {
   max-width: 10rem;
 }
+@media screen and (min-width: 1200px) {
+  .header .site-logo {
+    max-width: 15rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .header .site-logo {
+    max-width: 18rem;
+  }
+}
 @media screen and (max-width: 991px) {
   .header .menu-wrapper {
     display: none;
